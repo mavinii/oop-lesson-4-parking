@@ -8,12 +8,14 @@ namespace oop_lesson_4_parking
         static void Main(string[] args)
         {
             Console.WriteLine("********* Parking Application *********");
+            Console.WriteLine("");
 
-            //Calling my class Driver.cs
+            // It is calling Driver.cs class
             Driver driver = new Driver();
 
             driver.CreateClasses();
             driver.PopulateCarPark();
+
         }
     }
 }

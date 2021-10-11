@@ -22,10 +22,10 @@ namespace oop_lesson_4_parking.models
             Carpark carpark = new Carpark();
             Console.WriteLine(carpark.ToString());
 
-            Customer customer = new Customer();
+            Customer customer = new Customer("A2021" ,3);
             Console.WriteLine(customer.ToString());
 
-            CarParkCharge carparkcharge = new CarParkCharge();
+            CarparkCharge carparkcharge = new CarparkCharge();
             Console.WriteLine(carparkcharge.ToString());
         }
 
@@ -36,11 +36,11 @@ namespace oop_lesson_4_parking.models
             Carpark carpark = new Carpark();
 
             // Customer list
-            Customer c1 = new Customer();
-            Customer c2 = new Customer();
-            Customer c3 = new Customer();
-            Customer c4 = new Customer();
-            Customer c5 = new Customer();
+            Customer c1 = new Customer("A2021", 2);
+            Customer c2 = new Customer("B2021", 4);
+            Customer c3 = new Customer("C2021", 6);
+            Customer c4 = new Customer("D2021", 8);
+            Customer c5 = new Customer("E2021", 10);
 
             // Adding customers in the list in the CarPark Class
             // List must be PUBLIC

@@ -12,6 +12,10 @@ namespace oop_lesson_4_parking.models
         // It allows me to have a list of customers, the list is in Driver class
         public List<Customer> listOfCustomers = new List<Customer>();
 
+        // It is calling the CarparkCharge class
+        public CarparkCharge carparkCharge = new CarparkCharge();
+
+        // Constructor method
         public Carpark()
         {
             Console.WriteLine("* This is the CarPark Class");
@@ -27,8 +31,9 @@ namespace oop_lesson_4_parking.models
         {
             foreach (Customer currentCustomer in listOfCustomers)
             {
-                Console.WriteLine("Calculating Charges");
-            }
+                int calculatedCharge = carparkCharge.CalculateCharges(currentCustomer.hoursParked);
+                Console.WriteLine($"Calculating Charges for {currentCustomer.carRegistration} : {currentCustomer.hoursParked} hours parked costs {calculatedCharge}");
+            }   
         }
     }
 }
