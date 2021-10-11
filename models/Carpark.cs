@@ -29,6 +29,7 @@ namespace oop_lesson_4_parking.models
         //Function to calculate charges
         public void CalculateCharges()
         {
+            // Foreach goes through all customers
             foreach (Customer currentCustomer in listOfCustomers)
             {
                 int calculatedCharge = carparkCharge.CalculateCharges(currentCustomer.hoursParked);
