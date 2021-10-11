@@ -1,2 +1,2 @@
-# oop-lesson-4-parking
-CarPark System by John Rowley
+# CarPark System with C#
+Professor John Rowley
